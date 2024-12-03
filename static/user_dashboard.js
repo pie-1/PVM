@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { id: "1", name: "John Doe", clg: "Kathmandu College" },
     { id: "2", name: "Jane Smith", clg: "Pokhara University" },
   ];
-  let editIndex = -1; // Keeps track of the user being edited
+  let editIndex = -1; 
 
   const openModal = (action, user = null, index = -1) => {
     formTitle.textContent = `${action} User`;
@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   addUserBtn.addEventListener("click", () => openModal("Add"));
   closeModalBtn.addEventListener("click", closeModal);
-  window.editUser = editUser; // Make editUser global
-  window.deleteUser = deleteUser; // Make deleteUser global
+  window.editUser = editUser; 
+  window.deleteUser = deleteUser; 
 
   window.addEventListener("click", (e) => {
     if (e.target === userModal) closeModal();
