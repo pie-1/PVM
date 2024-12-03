@@ -12,8 +12,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(317, 100%, 45%);
-    padding: 10px 20px;
+    background-color: #FF69B4;
+    padding: 10px 18px;
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -83,7 +83,7 @@ body {
     text-align: left;
     background: linear-gradient(120deg, #ffe6ff, #e6ccff);
     border-radius: 10px;
-    margin: 30px auto;
+    margin: 20px auto;
     width: 90%;
     max-width: 1200px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -102,7 +102,7 @@ body {
 
 .text-container h1 {
     font-size: 2.8em;
-    color: hsl(317, 91%, 50%);
+    color: #FF69B4;
     margin-bottom: 15px;
 }
 
@@ -116,7 +116,7 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: hsl(317, 100%, 45%);
+    background-color: #FF69B4;
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -162,14 +162,14 @@ body {
 
 .stat-card h2 {
     font-size: 1.5em;
-    color: hsl(317, 100%, 35%);
+    color: hsl(317, 87%, 60%);
     margin-bottom: 15px;
 }
 
 .stat-card p {
     font-size: 2em;
     font-weight: bold;
-    color: hsl(317, 80%, 40%);
+    color: hsl(317, 84%, 59%);
 }
 
 /* Testimonials Section */
@@ -249,12 +249,207 @@ body {
   .social-actions .comment:hover {
     color: #b000b3;
   }
+
+  .chart-container {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .chart-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: hsl(317, 80%, 40%);
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* for user management dashboard  #FF69B4*/
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #444;
+}
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+#addUserBtn {
+  display: block;
+  margin: 20px auto;
+  background-color: #FF69B4;
+  color: white;
+  font-weight: bold;
+}
+
+#addUserBtn span {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+#addUserBtn:hover {
+  background-color: #800844;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #FF69B4;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+button[style*="background-color: #dc3545;"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+button[style*="background-color: #dc3545;"]:hover {
+  background-color: #c82333;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-container h2 {
+  margin-bottom: 20px;
+  color: hsl(217, 71%, 53%);
+}
+
+.modal-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.modal-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.modal-container input:focus {
+  border-color: hsl(217, 71%, 53%);
+  outline: none;
+}
+
+.modal-container button {
+  margin-top: 10px;
+  background-color: hsl(217, 71%, 53%);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+.modal-container button:hover {
+  background-color: hsl(217, 61%, 48%);
+}
+
+/* Close Modal Button */
+#closeModalBtn {
+  margin-top: 15px;
+  background-color: #6c757d;
+  color: white;
+  font-weight: normal;
+}
+
+#closeModalBtn:hover {
+  background-color: #5a6268;
+}
+
+
+@media (max-width: 768px) {
+  table {
+      font-size: 14px;
+  }
+
+  .modal-container {
+      width: 100%;
+      max-width: 350px;
+  }
+}
+    
   
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: hsl(317, 100%, 35%);
+    background-color: #FF69B4;
     color: white;
     font-size: 0.9em;
     margin-top: 20px;

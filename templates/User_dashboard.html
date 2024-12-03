@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>User Management</h1>
+
+    <button id="addUserBtn"><span>+</span>Add User</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Collage</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody"></tbody>
+    </table>
+
+    <div id="userModal" class="modal">
+      <div class="modal-container">
+        <h2 id="formTitle">Add User:</h2>
+        <form id="userForm">
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" required />
+          <br />
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="clg">College:</label>
+          <input type="text" id="clg" name="clg" required />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+        <button id="closeModalBtn">Close</button>
+      </div>
+    </div>
+
+    <script src="/static/user_dashboard.js"></script>
+  </body>
+</html>
